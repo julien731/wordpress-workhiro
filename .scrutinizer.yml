@@ -23,6 +23,8 @@ checks:
         avoid_superglobals: true
         security_vulnerabilities: false
         no_exit: false
+        code_rating: true
+        duplication: true
 coding_style:
     php:
         indentation:
