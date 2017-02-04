@@ -204,7 +204,7 @@ if ( ! class_exists( 'Workhiro_API' ) ) :
 		 *
 		 * @param string $state The state to filter jobs by. Possible states are published, draft and closed.
 		 *
-		 * @return string|WP_Error
+		 * @return array|WP_Error
 		 */
 		public function get_positions( $state = 'published' ) {
 
