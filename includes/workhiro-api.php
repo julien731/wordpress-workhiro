@@ -223,9 +223,22 @@ if ( ! class_exists( 'Workhiro_API' ) ) :
 		 * Get details of a specific position.
 		 *
 		 * @since 0.1.0
+		 *
+		 * @param int $id The position ID.
+		 *
 		 * @return WP_Error|array
 		 */
-		public function get_position() {}
+		public function get_position( $id ) {
+
+			$position = $this->request( 'GET', '/positions/' . (int) $id, array() );
+
+			if ( ! is_wp_error( $position ) ) {
+				$position = json_decode( $position );
+			}
+
+			return $position;
+
+		}
 
 	}
 
