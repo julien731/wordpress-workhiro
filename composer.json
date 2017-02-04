@@ -1,0 +1,5 @@
+{
+  "require": {
+    "markjaquith/wp-tlc-transients": "1.*"
+  }
+}
